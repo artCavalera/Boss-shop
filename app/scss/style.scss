@@ -1,0 +1,295 @@
+@use 'reset';
+@use 'vars';
+@use 'global';
+@use 'fonts';
+
+body {
+  @extend %opensans-400;
+  font-size: 20px;
+  line-height: 1.3;
+  color: vars.$basic-color-text;
+}
+
+// Promo block
+
+.promo {
+  padding: 7px 0 9px;
+  text-align: center;
+  background-color: vars.$promo-bg-color;
+  font-size: 11px;
+
+  &__text {
+    @extend %opensans-400;
+  }
+
+  &__link:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+}
+
+// Header
+
+.header {
+  padding: 37px 0 35px;
+  font-size: 16px;
+  color: vars.$basic-dark-color-text;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__lang {
+    display: flex;
+  }
+
+  &__lang-item {
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #696969;
+    }
+    &:active {
+      color: vars.$basic-dark-color-text;
+    }
+  }
+
+  &__lang-item--active {
+    @extend %opensans-700;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    @extend %opensans-400;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #696969;
+    }
+    &:active {
+      color: vars.$basic-dark-color-text;
+    }
+  }
+}
+
+// Section top
+
+.top {
+  min-height: 879px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    padding-top: 262px;
+  }
+
+  &__title {
+    margin-bottom: 33px;
+    max-width: 519px;
+    @extend %lora-400;
+    font-size: 75px;
+    text-transform: uppercase;
+    color: vars.$basic-dark-color-text;
+  }
+
+  &__link {
+    padding: 12px 38px;
+    display: inline-block;
+    align-self: flex-start;
+    @extend %opensans-400;
+    color: vars.$secondary-color-text;
+    background-color: vars.$button-bg-color;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #2b2b2c;
+    }
+
+    &:active {
+      background-color: vars.$button-bg-color;
+    }
+  }
+}
+
+// Section new-collection
+
+.new-collection {
+  padding: 150px 0 90px;
+
+  &__inner {
+    padding: 0px 40px;
+    display: flex;
+  }
+
+  &__content {
+    padding-top: 75px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    max-width: 417px;
+    margin-bottom: 23px;
+    @extend %lora-400;
+    font-size: 45px;
+    color: #161515;
+  }
+
+  &__text {
+    max-width: 403px;
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 10px 65px;
+    font-size: 16px;
+    border: 1px solid vars.$button-bg-color;
+  }
+
+  &__img {
+    padding-top: 75px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    position: relative;
+  }
+
+  &__box-img {
+    position: absolute;
+    top: 0;
+    left: -75px;
+  }
+
+  &__box-text {
+    margin-top: auto;
+    margin-bottom: 68px;
+    max-width: 289px;
+  }
+}
+
+// Footer
+
+.footer {
+  font-size: 16px;
+  background-color: vars.$basic-color-bg;
+  color: vars.$secondary-color-text;
+
+  &__menu-list {
+    margin-bottom: 50px;
+    padding: 55px 0 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__elements {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__element-title {
+    margin-bottom: 20px;
+    @extend %opensans-400;
+    color: vars.$secondary-color-text;
+    opacity: 0.5;
+  }
+
+  &__element-item {
+    margin-bottom: 5px;
+  }
+
+  &__element-form {
+    width: 253px;
+    position: relative;
+  }
+
+  &__element-input {
+    padding: 1px 30px 5px 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: vars.$secondary-color-text;
+    &::placeholder {
+      color: vars.$secondary-color-text;
+    }
+  }
+
+  &__element-btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__bottom {
+    background-color: #000;
+  }
+
+  &__bottom-inner {
+    padding: 7px 75px 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__information {
+    display: flex;
+    gap: 37px;
+  }
+
+  &__information-item {
+    position: relative;
+  }
+
+  &__information-item + .footer__information-item {
+    &::before {
+      content: '|';
+      position: absolute;
+      top: 0;
+      left: -19px;
+    }
+  }
+}

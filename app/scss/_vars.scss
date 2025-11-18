@@ -1,0 +1,39 @@
+$promo-bg-color: #cdcdcd;
+$button-bg-color: #161515;
+$secondary-color-text: #fff;
+
+
+$basic-color-text: #4f4f4f;
+$basic-dark-color-text: #161515;
+
+$basic-color-bg: #0f2b41;
+
+%inter-400 {
+  font-family: 'Inter-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%opensans-400 {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%opensans-500 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: 500;
+}
+
+%opensans-700 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%lora-400 {
+  font-family: 'Lora-Medium', serif;
+  font-weight: 500;
+}
+
+%lora-500 {
+  font-family: 'Lora-Medium', serif;
+  font-weight: 500;
+}
