@@ -293,3 +293,73 @@ body {
     }
   }
 }
+
+// Section join-us
+
+.join-us {
+  background-color: vars.$basic-color-bg;
+  color: vars.$secondary-color-text;
+
+  &__inner {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__img {
+  }
+
+  &__content {
+    margin-top: 94px;
+    max-width: 578px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @extend %lora-400;
+    font-size: 45px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    max-width: 540px;
+    @extend %lora-400;
+    font-size: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-input {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    @extend %opensans-400;
+    font-size: 20px;
+    color: vars.$secondary-color-text;
+    &::placeholder {
+      color: vars.$secondary-color-text;
+    }
+  }
+
+  &__form-btn {
+    margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
+    padding: 12px;
+    @extend %opensans-400;
+    font-size: 20px;
+    color: vars.$secondary-color-text;
+    background-color: vars.$button-bg-color;
+  }
+
+  &__form-descr {
+    @extend %opensans-400;
+    font-size: 11px;
+    color: vars.$secondary-color-text;
+    text-align: center;
+  }
+}
