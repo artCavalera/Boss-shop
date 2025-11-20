@@ -1,5 +1,5 @@
-@use 'reset';
 @use 'fonts';
+@use 'reset';
 @use 'vars';
 @use 'global';
 
@@ -384,23 +384,22 @@ body {
   }
 }
 
-// Section david-backham
+// Section david-beckham
 
 .david-beckham {
-  padding: 90px 0 233px;
-
   &__inner {
+    padding: 90px 0 253px;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
   }
 
   &__content {
+    padding-left: 39px;
     max-width: 541px;
+    width: 100%;
   }
 
   &__title {
-    margin-bottom: 5px;
     @extend %lora-400;
     font-size: 45px;
     text-transform: uppercase;
@@ -408,15 +407,21 @@ body {
   }
 
   &__text {
-    margin-bottom: 70px;
     font-size: 16px;
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
   }
 
-  &__text-primary {
+  &__text--color-bg {
     padding: 20px 27px;
-    max-width: 363px;
-    color: #fff;
+    max-width: 417px;
+    @extend %lora-400;
     background-color: vars.$basic-color-bg;
+    color: #fff;
+  }
+
+  &__box {
   }
 
   &__img {
@@ -427,9 +432,9 @@ body {
     display: inline-block;
     width: 100%;
     padding: 10px;
-    @extend %opensans-400;
+    font-size: 16px;
     color: vars.$basic-dark-color-text;
+    border: 1px solid vars.$button-bg-color;
     text-align: center;
-    border: 1px solid #161515;
   }
 }
