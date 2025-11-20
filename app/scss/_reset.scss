@@ -61,6 +61,10 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
 @media (favors-reduced-motion: reduce) {
   *,
   * ::before,

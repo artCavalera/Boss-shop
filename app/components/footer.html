@@ -13,7 +13,7 @@
             </li>
             <li class="footer__menu-item">
               <a class="footer__menu-link" href="#">
-                <img class="footer__menu-img" src="../images/src/footer-logo.svg" alt="boss logo" />
+                <img class="footer__menu-img" src="images/src/footer-logo.svg" alt="boss logo" />
               </a>
             </li>
             <li class="footer__menu-item">
@@ -57,10 +57,11 @@
           <div class="footer__element">
             <p class="footer__element-title">Sign-up for our newsletter</p>
             <form class="footer__element-form" action="">
-              <input class="footer__element-input" type="text" placeholder="Enter your email">
-              <button class="footer__element-btn">
+              <label for="mail" aria-label="Enter your email"></label>
+              <input class="footer__element-input" id="mail" type="email" placeholder="Enter your email">
+              <button class="footer__element-btn" type="submit" aria-label="send mail">
                 <svg width="15" height="11">
-                  <use xlink:href="../images/sprite.svg#envelope"></use>
+                  <use xlink:href="images/sprite.svg#envelope"></use>
                 </svg>
               </button>
             </form>
@@ -69,16 +70,16 @@
             <p class="footer__element-title">Social</p>
             <ul class="footer__social-list">
               <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
+                <a class="footer__social-link" href="#" aria-label="Open facebook">
                   <svg width="24" height="24">
-                    <use xlink:href="../images/sprite.svg#facebook"></use>
+                    <use xlink:href="images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
+                <a class="footer__social-link" href="#" aria-label="Open instagram">
                   <svg width="24" height="24">
-                    <use xlink:href="../images/sprite.svg#instagram"></use>
+                    <use xlink:href="images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -105,8 +106,3 @@
         </div>
       </div>
     </footer>
-  </div>
-<script src="js/main.min.js"></script>
-</body>
-
-</html>

@@ -1,3 +1,4 @@
+<!--=include head.html  -->
 <!--=include promo.html  -->
 <!--=include header.html  -->
 <main class="main">
@@ -5,51 +6,50 @@
     class="top"
     style="
       background-image: image-set(
-        url('../images/top-bg.avif') type('image/avif'),
-        url('../images/top-bg.webp') type('imag/webp'),
-        url('../images/top-bg.jpg') type('image/jpg')
+        url('images/top-bg.avif') type('image/avif'),
+        url('images/top-bg.webp') type('imag/webp'),
+        url('images/top-bg.jpg') type('image/jpg')
       );
     "
   >
     <div class="container">
       <div class="top__inner">
         <h1 class="top__title">Backham BOSS collection</h1>
-        <a class="top__link" href="#" target="_blank" rel="noopener noreferrer"
-          >SHOP NEW ARRIVALS</a
-        >
+        <a class="top__link" href="#">SHOP NEW ARRIVALS</a>
       </div>
     </div>
   </section>
+
   <section class="new-collection">
     <div class="container">
       <div class="new-collection__inner">
         <div class="new-collection__content">
           <h2 class="new-collection__title">NEW COLLECTION</h2>
-          <p class="new-collection__text">
-            A new era begins. Co-designed with David, the BECKHAM x BOSS collection
-            showcases elevated design in the form of timeless wardrobe staples and subtle statement
-            pieces.
-          </p>
-          <p class="new-collection__text">
-            The exclusive assortment features a wide range of fashion-forward separates that can
-            easily be paired to create countless outfits—think T-shirts, polos, trousers, blazers,
-            jackets, coats, accessories, and more.
-          </p>
-          <p class="new-collection__text">Explore the full selection today.</p>
-          <a class="new-collection__link" href="#" target="_blank" rel="noopener noreferrer"
-            >View the collection</a
-          >
+          <div class="new-collection__content-box">
+            <p class="new-collection__text">
+              A new era begins. Co-designed with David, the BECKHAM x BOSS collection
+              showcases elevated design in the form of timeless wardrobe staples and
+              subtle statement pieces.
+            </p>
+            <p class="new-collection__text">
+              The exclusive assortment features a wide range of fashion-forward separates that can
+              easily be paired to create countless outfits—think T-shirts, polos, trousers, blazers,
+              jackets, coats, accessories, and more.
+            </p>
+            <p class="new-collection__text">Explore the full selection today.</p>
+          </div>
+          <a class="new-collection__link" href="#">View the collection</a>
         </div>
         <picture class="new-collection__img">
-          <source srcset="../images/new-collection-01.avif" type="image/avif" />
-          <source srcset="../images/new-collection-01.webp" type="image/webp" />
-          <img src="../images/new-collection-01.jpg" alt="new collections items" />
+          <source srcset="images/new-collection-01.avif" type="image/avif" />
+          <source srcset="images/new-collection-01.webp" type="image/webp" />
+          <img src="images/new-collection-01.jpg" alt="new collections items" width="347" height="564" loading="lazy" />
         </picture>
         <div class="new-collection__box">
           <picture class="new-collection__box-img">
             <source srcset="../images/new-collection-02.avif" type="image/avif" />
             <source srcset="../images/new-collection-02.webp" type="image/webp" />
-            <img src="../images/new-collection-02.jpg" alt="new collections items" />
+            <img src="../images/new-collection-02.jpg" alt="new collections items" width="404" height="450" loading="lazy" />
           </picture>
           <p class="new-collection__box-text">ELEVATE YOUR STYLE WITH DAVID BECKHAM</p>
         </div>
@@ -57,5 +57,44 @@
     </div>
   </section>
   <!--=include join-us.html  -->
+  <section class="david-beckham">
+    <div class="container">
+      <div class="david-beckham__inner">
+        <div class="david-beckham__content">
+          <h2 class="david-beckham__title">David Beckham</h2>
+          <p class="david-beckham__text">
+            "For me, style has always been about confidence, simplicity, and authenticity—and that’s
+            exactly what this BOSS collection captures. Each piece is designed with a sense of
+            purpose and elegance that fits effortlessly into the life of a modern man. Whether I’m
+            at an event, spending time with family, or traveling, I want clothes that reflect who I
+            am without trying too hard. BOSS understands that balance between refinement and ease,
+            and I’m proud to be part of something that empowers people to feel strong, comfortable,
+            and truly themselves."
+          </p>
+          <p class="david-beckham__text david-beckham__text-primary">
+            "This collection is all about clean lines, strong identity, and understated
+            confidence—three things that have always defined my personal style."
+          </p>
+          <p class="david-beckham__text">
+            "Collaborating with BOSS feels natural to me — they share my values of hard work,
+            precision, and timeless design. What I love most is how the collection combines sharp
+            tailoring with relaxed confidence. It's not just about looking good; it's about feeling
+            empowered in your own skin. Fashion should be effortless, and BOSS achieves that with
+            grace."
+          </p>
+        </div>
+
+        <div class="david-beckham__box">
+          <picture>
+            <source srcset="" type="image/avif" />
+            <source srcset="" type="image/webp" />
+            <img class="david-beckham__img" src="../images/david-backham.jpg" alt="david backham" />
+          </picture>
+          <a class="david-beckham__link" href="#">Show more</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <!--=include footer.html  -->
+<!--=include script.html  -->
