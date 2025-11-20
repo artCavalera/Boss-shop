@@ -421,9 +421,6 @@ body {
     color: #fff;
   }
 
-  &__box {
-  }
-
   &__img {
     margin-bottom: 40px;
   }
@@ -436,5 +433,44 @@ body {
     color: vars.$basic-dark-color-text;
     border: 1px solid vars.$button-bg-color;
     text-align: center;
+  }
+}
+
+// Section our-advantages
+
+.our-advantages {
+  color: #fff;
+  background-color: vars.$basic-color-bg;
+  
+  &__wrapper {
+    padding: 60px 0 38px 0;
+    position: relative;
+  }
+  
+  &__img {
+    position: absolute;
+    left: 39px;
+    bottom: 0;
+  }
+  
+  &__inner {
+    max-width: 562px;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    @extend %lora-400;
+    font-size: 45px;
+  }
+
+  &__list {
+    list-style-type: disc;
+    columns: 2;
+    column-gap: 80px;
+  }
+  
+  &__item {
+    margin-bottom: 30px;
   }
 }
