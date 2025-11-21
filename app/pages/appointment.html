@@ -1,0 +1,49 @@
+<!--=include head.html  -->
+<!--=include promo.html  -->
+<!--=include header.html  -->
+<main class="main">
+  <section class="appointment">
+    <div class="container">
+      <h2 class="appointment__title">book an appointment</h2>
+      <div class="appointment__inner">
+        <form class="appointment__form" action="">
+          <p class="appointment__form-title">contact informathion</p>
+          <p class="appointment__form-descr">Fill in your contact details</p>
+          <label for="first-name"></label>
+          <input
+            class="appointment__form-input"
+            id="frist-name"
+            type="text"
+            placeholder="First name"
+          />
+          <label for="last-name"></label>
+          <input
+            class="appointment__form-input"
+            id="last-name"
+            type="text"
+            placeholder="Last name"
+          />
+          <label for="email"></label>
+          <input class="appointment__form-input" id="email" type="email" placeholder="Email" />
+          <label for="mobile"></label>
+          <input class="appointment__form-input" id="mobile" type="tel" placeholder="Mobile" />
+          <button class="appointment__form-btn" type="submit">send</button>
+        </form>
+        <picture>
+          <!-- <source srcset="image.avif" type="image/avif" />
+          <source srcset="image.webp" type="image/webp" /> -->
+          <img
+            class="appointment__img"
+            src="images/appointment/appointment.jpg"
+            width="580"
+            height="490"
+            loading="lazy"
+            alt="David Beckham"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+</main>
+<!--=include footer.html  -->
+<!--=include script.html  -->
