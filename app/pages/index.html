@@ -6,9 +6,9 @@
     class="top"
     style="
       background-image: image-set(
-        url('images/top-bg.avif') type('image/avif'),
-        url('images/top-bg.webp') type('imag/webp'),
-        url('images/top-bg.jpg') type('image/jpg')
+        url('images/top/top-bg.avif') type('image/avif'),
+        url('images/top/top-bg.webp') type('imag/webp'),
+        url('images/top/top-bg.jpg') type('image/jpg')
       );
     "
   >
@@ -41,8 +41,8 @@
           <a class="new-collection__link" href="#">View the collection</a>
         </div>
         <picture class="new-collection__img">
-          <source srcset="images/new-collection-01.avif" type="image/avif" />
-          <source srcset="images/new-collection-01.webp" type="image/webp" />
+          <source srcset="images/new-collection/new-collection-01.avif" type="image/avif" />
+          <source srcset="images/new-collection/new-collection-01.webp" type="image/webp" />
           <img
             src="images/new-collection-01.jpg"
             alt="new collections items"
@@ -53,10 +53,10 @@
         </picture>
         <div class="new-collection__box">
           <picture class="new-collection__box-img">
-            <source srcset="../images/new-collection-02.avif" type="image/avif" />
-            <source srcset="../images/new-collection-02.webp" type="image/webp" />
+            <source srcset="images/new-collection/new-collection-02.avif" type="image/avif" />
+            <source srcset="images/new-collection/new-collection-02.webp" type="image/webp" />
             <img
-              src="../images/new-collection-02.jpg"
+              src="images/new-collection/new-collection-02.jpg"
               alt="new collections items"
               width="404"
               height="450"
@@ -97,11 +97,11 @@
         </div>
         <div class="david-beckham__box">
           <picture>
-            <!-- <source srcset="image.avif" type="image/avif" />
-            <source srcset="image.webp" type="image/webp" /> -->
+            <source srcset="images/david-beckham/david-beckham.avif" type="image/avif" />
+            <source srcset="images/david-beckham/david-beckham.webp" type="image/webp" />
             <img
               class="david-beckham__img"
-              src="images/david-beckham.jpg"
+              src="images/david-beckham/david-beckham.jpg"
               alt="David Beckham"
               width="578"
               height="554"
@@ -117,11 +117,11 @@
     <div class="container">
       <div class="our-advantages__wrapper">
         <picture>
-          <!-- <source srcset="image.avif" type="image/avif" />
-          <source srcset="image.webp" type="image/webp" /> -->
+          <source srcset="images/our-advantages/our-advantages.avif" type="image/avif" />
+          <source srcset="images/our-advantages/our-advantages.webp" type="image/webp" />
           <img
             class="our-advantages__img"
-            src="images/our-advantages.jpg"
+            src="images/our-advantages/our-advantages.jpg"
             width="378"
             height="460"
             loading="lazy"
@@ -129,7 +129,7 @@
           />
         </picture>
         <div class="our-advantages__inner">
-          <h2 class="our-advantages__title">OUR ADVANTAGES</h2>
+          <h2 class="our-advantages__title">our advantages</h2>
           <ul class="our-advantages__list">
             <li class="our-advantages__item">Timeless style</li>
             <li class="our-advantages__item">Elegant and comfortable</li>
@@ -138,6 +138,57 @@
             <li class="our-advantages__item">Confidence-boosting</li>
             <li class="our-advantages__item">Modern attitude</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-blog">
+    <div class="container">
+      <div class="our-blog__inner">
+        <div class="our-blog__content">
+          <h2 class="our-blog__title">OUR BLOG</h2>
+          <p class="our-blog__text">
+            Our blog shares insights about style, design, and modern living. We inspire confidence
+            and creativity through curated articles.  Stay updated with the latest trends and expert
+            advice from our team.
+          </p>
+        </div>
+        <div class="our-blog__box our-blog__right-box">
+          <picture>
+            <source srcset="images/our-blog/blog-01.avif" type="image/avif" />
+            <source srcset="images/our-blog/blog-01.webp" type="image/webp" />
+            <img
+              class="our-blog__box-img"
+              src="images/our-blog/blog-01.jpg"
+              alt="Alt text"
+              width="300"
+              height="369"
+              loading="lazy"
+            />
+          </picture>
+          <a class="our-blog__box-link" href="#" target="_blank" rel="noopener"
+            >"How to Elevate Your Style with Timeless Pieces"</a
+          >
+          <p class="our-blog__box-date">Tuesday, 16 April 2025</p>
+          <a class="our-blog__box-btn" href="#">Show more</a>
+        </div>
+        <div class="our-blog__box our-blog__bottom-box">
+          <picture>
+            <source srcset="images/our-blog/blog-02.avif" type="image/avif" />
+            <source srcset="images/our-blog/blog-02.webp" type="image/webp" />
+            <img
+              class="our-blog__box-img"
+              src="images/our-blog/blog-02.jpg"
+              alt="Alt text"
+              width="772"
+              height="395"
+              loading="lazy"
+            />
+          </picture>
+          <a class="our-blog__box-link" href="#" target="_blank" rel="noopener"
+            >Top Trends in Modern Design You Need to Know</a
+          >
+          <p class="our-blog__box-date">Monday, 20 May 2025</p>
         </div>
       </div>
     </div>
