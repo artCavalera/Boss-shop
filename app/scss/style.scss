@@ -605,3 +605,146 @@ body {
     }
   }
 }
+
+// Breadcrumbs
+
+.breadcrumbs {
+  padding: 50px 0 90px;
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #696969;
+    }
+    &:active {
+      color: vars.$basic-dark-color-text;
+    }
+  }
+
+  &__item + .breadcrumbs__item::before {
+    content: '/';
+    position: absolute;
+    left: -9px;
+  }
+}
+
+// Collections
+
+.top-collections {
+  min-height: 100vh;
+  background-image: url('../images/collections/collections-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.collections {
+  &__title {
+    margin-bottom: 60px;
+    @extend %lora-400;
+    font-size: 52px;
+    color: vars.$basic-dark-color-text;
+    text-transform: uppercase;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-areas:
+      'a a b c'
+      'a a d e'
+      'f g h h'
+      'i j h h';
+    gap: 40px;
+  }
+
+  &__item {
+    position: relative;
+    &:nth-child(1) {
+      grid-area: a;
+    }
+    &:nth-child(2) {
+      grid-area: b;
+    }
+    &:nth-child(3) {
+      grid-area: c;
+    }
+    &:nth-child(4) {
+      grid-area: d;
+    }
+    &:nth-child(5) {
+      grid-area: e;
+    }
+
+    &:nth-child(6) {
+      grid-area: f;
+      margin-top: -130px;
+    }
+    &:nth-child(7) {
+      grid-area: g;
+      margin-top: -130px;
+    }
+    &:nth-child(8) {
+      grid-area: h;
+    }
+    &:nth-child(9) {
+      grid-area: i;
+    }
+    &:nth-child(10) {
+      grid-area: j;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+  }
+}
+
+// Pagination
+.pagination {
+  padding: 20px 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+  &__arrow {
+  }
+
+   &__arrow--inactive {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2;
+  }
+
+  &__item {
+    font-size: 16px;
+    color: vars.$basic-dark-color-text;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link--active {
+    background-color: vars.$basic-color-text;
+    border-radius: 8px;
+    color: vars.$secondary-color-text;
+  }
+}
