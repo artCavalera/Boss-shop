@@ -638,8 +638,8 @@ body {
 // Collections
 
 .top-collections {
+
   min-height: 100vh;
-  background-image: url('../images/collections/collections-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -716,10 +716,7 @@ body {
   align-items: center;
   gap: 2px;
 
-  &__arrow {
-  }
-
-   &__arrow--inactive {
+  &__arrow--inactive {
     display: none;
   }
 
