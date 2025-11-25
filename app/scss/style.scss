@@ -998,3 +998,77 @@ body {
     left: 7px;
   }
 }
+
+// Page 404
+
+.page-404 {
+  &__container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1562px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-top: 22vh;
+    margin-right: 14px;
+    margin-left: 35px;
+    max-width: 731px;
+    @extend %lora-400;
+  }
+
+  &__content-title {
+    margin-bottom: 80px;
+    font-size: 160px;
+    text-transform: uppercase;
+    color: vars.$basic-dark-color-text;
+  }
+
+  &__content-link {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    span {
+      font-size: 48px;
+      text-transform: uppercase;
+      color: vars.$basic-dark-color-text;
+      display: inline-block;
+      max-width: 621px;
+    }
+  }
+
+}
+.moving {
+  opacity: 0.2;
+  overflow: hidden;
+  &__text {
+    @extend %lora-400;
+    font-size: 160px;
+    text-transform: uppercase;
+    color: vars.$basic-dark-color-text;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    animation-name: moving;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+
+@keyframes moving {
+  0% {
+transform: translateX(0%);
+  }
+
+  100% {
+transform: translateX(-100%);
+
+  }
+}
