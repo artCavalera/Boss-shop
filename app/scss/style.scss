@@ -2,6 +2,7 @@
 @use 'reset';
 @use 'vars';
 @use 'global';
+@use '../../node_modules/swiper/swiper-bundle.css';
 
 body {
   @extend %opensans-400;
@@ -638,7 +639,6 @@ body {
 // Collections
 
 .top-collections {
-
   min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -743,5 +743,258 @@ body {
     background-color: vars.$basic-color-text;
     border-radius: 8px;
     color: vars.$secondary-color-text;
+  }
+}
+
+// Section product
+
+.product {
+  padding-bottom: 156px;
+
+  &__inner {
+    padding-right: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1.1fr;
+    gap: 40px;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    picture:nth-child(2) {
+      grid-row: span 2;
+    }
+    img {
+      max-width: max-content;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @extend %lora-400;
+    font-size: 35px;
+    color: vars.$basic-dark-color-text;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    margin-bottom: 30px;
+    @extend %opensans-700;
+    font-size: 25px;
+  }
+
+  &__list {
+    margin: 0;
+  }
+
+  &__term {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    @extend %opensans-700;
+    font-size: 16px;
+    &:first-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__detalis {
+    margin-left: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  &__detalis-text {
+    margin-bottom: 30px;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  &__buttons {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  &__btn {
+    padding: 9px;
+    font-size: 16px;
+    border: 1px solid vars.$basic-color-text;
+    border-radius: 3px;
+  }
+
+  &__btn-sizeGuide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #808080;
+      border-color: #808080;
+    }
+  }
+
+  &__btn-favorites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #808080;
+      border-color: #808080;
+    }
+  }
+
+  &__btn-addToBag {
+    grid-column: 1 / -1;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #808080;
+      border-color: #808080;
+    }
+  }
+
+  &__detalis-checkbox {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__detalis-radio {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.radio-label {
+  padding-left: 26px;
+}
+
+.radio-check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  &:checked + .radio-style::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: vars.$basic-color-bg;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+}
+
+.radio-style {
+  margin-top: 3px;
+  position: absolute;
+  margin-left: -26px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid vars.$basic-dark-color-text;
+}
+
+.checkbox-label {
+  padding-left: 20px;
+}
+
+.check-box {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  &:checked + .check-style::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+    background-color: vars.$basic-color-bg;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+}
+
+.check-style {
+  margin-top: 3px;
+  position: absolute;
+  margin-left: -20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 1px;
+  border: 1px solid vars.$basic-dark-color-text;
+}
+
+.look {
+  padding-bottom: 90px;
+
+  &__title {
+    margin: 0 auto;
+    max-width: 890px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid vars.$basic-color-text;
+    @extend %lora-400;
+    font-size: 30px;
+    color: vars.$basic-dark-color-text;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__slider {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 0 30px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  &__slider-wrapper {
+  }
+
+  &__slider-slide {
+    text-align: center;
+  }
+
+  &__slider-img {
+    margin-bottom: 20px;
+  }
+
+  &__slider-title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__slider-price {
+    @extend %opensans-700;
+  }
+
+  &__slider-arrow {
+    position: absolute;
+    top: 38%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  &__slider-arrow-next {
+    right: 7px;
+  }
+  &__slider-arrow-prev {
+    left: 7px;
   }
 }
