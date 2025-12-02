@@ -8,3 +8,18 @@ const swiper = new Swiper('.look__slider', {
     prevEl: '.look__slider-arrow-prev',
   },
 })
+
+const swiperReviews = new Swiper('.reviews__slider', {
+  loop: true,
+  slidesPerView: 8,
+  spaceBetween: 16,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews__arrow-next',
+    prevEl: '.reviews__arrow-prev',
+  },
+  pagination: {
+    el: '.reviews__pagination',
+    type: "fraction",
+  },
+})
