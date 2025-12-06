@@ -42,7 +42,7 @@
         <form class="blog__select-form" action="">
           <div class="select__wrapper">
             <select class="select" name="category" id="">
-              <optionf>Categories</optionf>
+              <option>Categories</option>
               <option value="Modern">Modern</option>
               <option value="Collaboration">Collaboration</option>
               <option value="Fabrics">Fabrics</option>
@@ -52,9 +52,10 @@
           </div>
         </form>
         <search class="blog__search">
+          <label for=""></label>
           <form class="blog__search-form" action="">
             <input class="blog__search-input" type="search" placeholder="search" />
-            <button class="blog__search-btn">
+            <button class="blog__search-btn" type="button" aria-label="search">
               <svg width="18" height="18">
                 <use xlink:href="images/sprite.svg#search"></use>
               </svg>
@@ -63,14 +64,14 @@
         </search>
         <ul class="blog__nav-btns">
           <li class="blog__nav-btns-item">
-            <button class="blog__nav-btn view-mode__btn-grid">
+            <button class="blog__nav-btn view-mode__btn-grid" type="button" aria-label="grid">
               <svg width="40" height="40">
                 <use xlink:href="images/sprite.svg#icon-grid"></use>
               </svg>
             </button>
           </li>
           <li class="blog__nav-btns-item">
-            <button class="blog__nav-btn view-mode__btn-line">
+            <button class="blog__nav-btn view-mode__btn-line" type="button" aria-label="list">
               <svg width="40" height="40">
                 <use xlink:href="images/sprite.svg#lucide-list"></use>
               </svg>
@@ -95,7 +96,7 @@
               </picture>
             </a>
             <div class="blog__item-content">
-              <p class="blog__item-category">Modern</p>
+              <span class="blog__item-category">Modern</span>
               <h3 class="blog__item-title">
                 <a href="#">The Art of Modern Tailoring: David Beckham’s Touch on BOSS</a>
               </h3>
@@ -117,7 +118,7 @@
               </picture>
             </a>
             <div class="blog__item-content">
-              <p class="blog__item-category">Collaboration</p>
+              <span class="blog__item-category">Collaboration</span>
               <h3 class="blog__item-title">
                 <a href="#">Why BOSS x Beckham Is Redefining Men's Fashion Staples</a>
               </h3>
@@ -139,7 +140,7 @@
               </picture>
             </a>
             <div class="blog__item-content">
-              <p class="blog__item-category">Fabrics</p>
+              <span class="blog__item-category">Fabrics</span>
               <h3 class="blog__item-title">
                 <a href="#">Premium Fabrics, Effortless Style: A Closer Look at the Collection</a>
               </h3>
@@ -161,7 +162,7 @@
               </picture>
             </a>
             <div class="blog__item-content">
-              <p class="blog__item-category">Menswear</p>
+              <span class="blog__item-category">Menswear</span>
               <h3 class="blog__item-title">
                 <a href="#">How David Beckham Brings New Energy to Classic Menswear</a>
               </h3>
@@ -183,7 +184,7 @@
               </picture>
             </a>
             <div class="blog__item-content">
-              <p class="blog__item-category">Details</p>
+              <span class="blog__item-category">Details</span>
               <h3 class="blog__item-title">
                 <a href="#">Luxury in Every Detail: Materials That Make the Difference</a>
               </h3>
@@ -205,7 +206,7 @@
               </picture>
             </a>
             <div class="blog__item-content">
-              <p class="blog__item-category">Modern</p>
+              <span class="blog__item-category">Modern</span>
               <h3 class="blog__item-title">
                 <a href="#">Smart, Sharp, Iconic: Key Pieces from BOSS x Beckham </a>
               </h3>
@@ -227,7 +228,7 @@
               </picture>
             </a>
             <div class="blog__item-content">
-              <p class="blog__item-category">Menswear</p>
+              <span class="blog__item-category">Menswear</span>
               <h3 class="blog__item-title">
                 <a href="#"> From Day to Night: Styling the BOSS x David Beckham Line </a>
               </h3>
@@ -249,7 +250,7 @@
               </picture>
             </a>
             <div class="blog__item-content">
-              <p class="blog__item-category">Modern</p>
+              <span class="blog__item-category">Modern</span>
               <h3 class="blog__item-title">
                 <a href="#"> Redefining Modern Masculinity with BOSS and David Beckham </a>
               </h3>

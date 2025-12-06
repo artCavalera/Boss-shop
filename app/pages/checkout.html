@@ -31,6 +31,7 @@
                     type="text"
                     placeholder="Enter your last name"
                     required
+                    id="last name"
                   />
                 </label>
                 <label class="checkout__info-box-label">
@@ -101,8 +102,8 @@
               <p class="checkout__info-deltext">Select delivery method*</p>
               <div class="checkout__info-del-box">
                 <div class="checkout__info-radio">
-                  <label class="radio-label">
-                    <input class="radio-check" type="radio" name="delivery" checked />
+                  <label class="radio-label" for="post">
+                    <input class="radio-check" type="radio" name="delivery" id="post" checked />
                     <span class="radio-style"></span>
                     <span class="radio-name">Nova Poshta </span>
                     <span class="radio-text">Delivery will take 2-7 days </span>
@@ -110,8 +111,8 @@
                   <p class="checkout__info-del-price">free</p>
                 </div>
                 <div class="checkout__info-radio">
-                  <label class="radio-label">
-                    <input class="radio-check" type="radio" name="delivery" />
+                  <label class="radio-label" for="home">
+                    <input class="radio-check" type="radio" name="delivery" id="home" />
                     <span class="radio-style"></span>
                     <span class="radio-name">Nova Poshta (home delivery)</span>
                     <span class="radio-text">Delivery will take 2-7 days </span>
@@ -179,7 +180,7 @@
           <div class="checkout__details-items">
             <div class="checkout__details-items-line">
               <p class="checkout__details-quantity">2 items in bag</p>
-              <button class="checkout__details-del" type="button">
+              <button class="checkout__details-del" type="button" aria-label="close wish list">
                 <svg width="18" height="18">
                   <use xlink:href="images/sprite.svg#checkout-del"></use>
                 </svg>
@@ -208,7 +209,7 @@
                     <dd class="checkout__item-difinition">€ 249,00</dd>
                   </div>
                 </dl>
-                <button class="checkout__item-del" type="button">
+                <button class="checkout__item-del" type="button" aria-label="delete item">
                   <svg width="20" height="20">
                     <use xlink:href="images/sprite.svg#basket"></use>
                   </svg>
@@ -244,7 +245,7 @@
                     <dd class="checkout__item-difinition">€ 299,00</dd>
                   </div>
                 </dl>
-                <button class="checkout__item-del" type="button">
+                <button class="checkout__item-del" type="button" aria-label="delete item">
                   <svg width="20" height="20">
                     <use xlink:href="images/sprite.svg#basket"></use>
                   </svg>

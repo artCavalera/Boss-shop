@@ -1,3 +1,24 @@
+const headerBtn = document.querySelector('.header__btn')
+const menu = document.querySelector('.menu')
+
+headerBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu--active')
+})
+
+const modeContainer = document.querySelector('.view-mode__container')
+const modeBtnGrid = document.querySelector('.view-mode__btn-grid')
+const modeBtnLine = document.querySelector('.view-mode__btn-line')
+
+modeBtnGrid.addEventListener('click', () => {
+  modeContainer.classList.add('view-mode__container--grid')
+  modeContainer.classList.remove('view-mode__container--line')
+})
+
+modeBtnLine.addEventListener('click', () => {
+  modeContainer.classList.add('view-mode__container--line')
+  modeContainer.classList.remove('view-mode__container--grid')
+})
+
 const swiper = new Swiper('.look__slider', {
   loop: true,
   slidesPerView: 3,
@@ -55,18 +76,4 @@ rangeMin.addEventListener('change', () => {
 
 rangeMax.addEventListener('change', () => {
   rangeSlider.noUiSlider.set([rangeMax.value, null])
-})
-
-const modeContainer = document.querySelector('.view-mode__container')
-const modeBtnGrid = document.querySelector('.view-mode__btn-grid')
-const modeBtnLine = document.querySelector('.view-mode__btn-line')
-
-modeBtnGrid.addEventListener('click', () => {
-  modeContainer.classList.add('view-mode__container--grid')
-  modeContainer.classList.remove('view-mode__container--line')
-})
-
-modeBtnLine.addEventListener('click', () => {
-  modeContainer.classList.add('view-mode__container--line')
-  modeContainer.classList.remove('view-mode__container--grid')
 })

@@ -4,6 +4,7 @@
 @use 'global';
 @use '../../node_modules/swiper/swiper-bundle.css';
 @use '../../node_modules/nouislider/dist/nouislider.css';
+@use 'media';
 
 body {
   @extend %opensans-400;
@@ -43,6 +44,10 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  &__btn {
+    display: none;
   }
 
   &__logo {
@@ -1190,6 +1195,7 @@ body {
   }
 
   &__list {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px 20px;
   }
