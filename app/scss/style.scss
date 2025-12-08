@@ -114,16 +114,17 @@ body {
   min-height: 879px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   &__inner {
-    padding-top: 262px;
+    padding-top: 32vh;
   }
 
   &__title {
     margin-bottom: 33px;
     max-width: 519px;
     @extend %lora-400;
-    font-size: 75px;
+    font-size: clamp(30px, 6vw, 75px);
     text-transform: uppercase;
     color: vars.$basic-dark-color-text;
   }
@@ -150,12 +151,18 @@ body {
 // Section new-collection
 
 .new-collection {
+  position: relative;
   padding: 150px 0 90px;
 
   &__inner {
     padding-left: 40px;
     display: flex;
     justify-content: space-between;
+
+    img {
+      object-position: center;
+      object-fit: cover;
+    }
   }
 
   &__content {
@@ -169,12 +176,13 @@ body {
     max-width: 417px;
     margin-bottom: 23px;
     @extend %lora-400;
-    font-size: 45px;
+    font-size: clamp(20px, 4vw, 45px);
     color: #161515;
   }
 
   &__text {
     max-width: 403px;
+    font-size: clamp(14px, 3vw, 20px);
     &:not(:last-child) {
       margin-bottom: 25px;
     }
@@ -196,6 +204,8 @@ body {
 
   &__img {
     padding-top: 75px;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__box {
@@ -233,13 +243,13 @@ body {
 
   &__content {
     margin-top: 94px;
-    max-width: 578px;
+    max-width: 50%;
   }
 
   &__title {
     margin-bottom: 20px;
     @extend %lora-400;
-    font-size: 45px;
+    font-size: clamp(45px, 4vw, 20px);
     text-transform: uppercase;
   }
 
@@ -247,7 +257,12 @@ body {
     margin-bottom: 40px;
     max-width: 540px;
     @extend %lora-400;
-    font-size: 30px;
+    font-size: clamp(30px, 2vw, 16px);
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
   }
 
   &__form {
@@ -314,7 +329,7 @@ body {
 
   &__title {
     @extend %lora-400;
-    font-size: 45px;
+    font-size: clamp(20px, 4vw, 45px);
     text-transform: uppercase;
     color: vars.$basic-dark-color-text;
   }
@@ -335,6 +350,8 @@ body {
   }
 
   &__img {
+    object-fit: cover;
+    object-position: center;
     margin-bottom: 40px;
   }
 
@@ -369,6 +386,8 @@ body {
     position: absolute;
     left: 39px;
     bottom: 0;
+    object-fit: cover;
+    object-position: center;
   }
 
   &__inner {
@@ -380,7 +399,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 50px;
     @extend %lora-400;
-    font-size: 45px;
+    font-size: clamp(20px, 3vw, 45px);
   }
 
   &__list {
@@ -402,7 +421,7 @@ body {
 
   &__inner {
     display: grid;
-    grid-template-columns: 772px 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 20px;
   }
@@ -410,11 +429,12 @@ body {
   &__title {
     margin-bottom: 15px;
     @extend %lora-400;
-    font-size: 45px;
+    font-size: clamp(20px, 3vw, 45px);
     color: vars.$basic-dark-color-text;
   }
 
   &__text {
+    font-size: clamp(16px, 2vw, 20px);
     max-width: 542px;
     font-size: 16px;
     margin-bottom: 70px;
@@ -427,6 +447,8 @@ body {
   }
 
   &__box-img {
+    object-fit: cover;
+    object-position: center;
     margin-bottom: 20px;
   }
 
@@ -443,7 +465,9 @@ body {
   &__box-btn {
     margin-top: 95px;
     display: inline-block;
-    padding: 10px 107px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
     font-size: 16px;
     color: vars.$basic-dark-color-text;
     border: 1px solid vars.$button-bg-color;
