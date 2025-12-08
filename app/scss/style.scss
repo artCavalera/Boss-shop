@@ -1035,6 +1035,10 @@ body {
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1562px;
+    img {
+      object-position: center;
+      object-fit: cover;
+    }
   }
 
   &__inner {
@@ -1062,7 +1066,7 @@ body {
     gap: 20px;
     align-items: flex-end;
     span {
-      font-size: 48px;
+      font-size: clamp(24px, 3vw, 48px);
       text-transform: uppercase;
       color: vars.$basic-dark-color-text;
       display: inline-block;
