@@ -1283,6 +1283,12 @@ body {
 
 .blog-one {
   margin-bottom: 10px;
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+  }
 
   &__content {
     picture:first-of-type {
@@ -1295,6 +1301,7 @@ body {
       @extend %lora-400;
       color: vars.$basic-dark-color-text;
       font-size: 96px;
+      font-size: clamp(26px, 6vw, 96px);
       line-height: 1.2;
       text-transform: uppercase;
     }
@@ -1309,6 +1316,11 @@ body {
       margin-bottom: 20px;
       @extend %lora-400;
       font-size: 32px;
+      font-size: clamp(24px, 4vw, 32px);
+    }
+
+    p {
+      font-size: clamp(16px, 2vw, 20px);
     }
 
     & > p {
