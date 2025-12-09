@@ -685,7 +685,7 @@ body {
   &__title {
     margin-bottom: 60px;
     @extend %lora-400;
-    font-size: 52px;
+    font-size: clamp(28px, 4vw, 52px);
     color: vars.$basic-dark-color-text;
     text-transform: uppercase;
   }
