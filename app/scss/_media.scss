@@ -381,6 +381,18 @@
         }
       }
     }
+    .appointment {
+      &__title {
+        margin-bottom: 50px;
+      }
+      &__form-title {
+        margin-bottom: 30px;
+      }
+      &__form-input {
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+    }
   }
   .footer {
     .footer__menu-list {
@@ -428,7 +440,25 @@
         margin-bottom: 40px;
       }
     }
-    .blog-one {
+    .appointment {
+      &__inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      &__form {
+        margin: 0 auto;
+        max-width: 220px;
+      }
+      &__form-title {
+        text-align: center;
+      }
+
+      &__picture-img {
+        order: -1;
+      }
+      &__img {
+        height: 250px;
+      }
     }
   }
   .new-collection {

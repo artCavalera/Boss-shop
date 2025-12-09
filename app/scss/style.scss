@@ -582,7 +582,7 @@ body {
     margin-bottom: 77px;
     @extend %lora-400;
     color: vars.$basic-dark-color-text;
-    font-size: 45px;
+    font-size: clamp(20px, 3vw, 45px);
     text-align: center;
     text-transform: uppercase;
   }
@@ -593,6 +593,11 @@ body {
     gap: 80px;
   }
 
+  &__img {
+    object-position: center;
+    object-fit: cover;
+  }
+
   &__form {
     display: flex;
     flex-direction: column;
@@ -601,7 +606,7 @@ body {
   &__form-title {
     margin-bottom: 80px;
     @extend %lora-400;
-    font-size: 30px;
+    font-size: clamp(20px, 3vw, 30px);
     text-transform: uppercase;
   }
 
