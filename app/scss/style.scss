@@ -1458,19 +1458,19 @@ body {
     padding-bottom: 60px;
   }
 
-  &__slider {
-    margin-bottom: 24px;
-    overflow: hidden;
-    width: calc(100vw - (100vw - 1500px) / 2);
-  }
-
   &__slider-addreview {
+    margin-top: 148px;
     display: inline-block;
     padding: 24px 216px;
     font-size: 16px;
     color: vars.$basic-dark-color-text;
     border: 1px solid vars.$basic-dark-color-text;
     text-transform: uppercase;
+    transition: all;
+    &:hover {
+      color: #808080;
+      border-color: #808080;
+    }
   }
 
   &__slider-nav {
@@ -1480,36 +1480,44 @@ body {
     left: 0;
     right: 0;
   }
-  &__arrow {
-    position: absolute;
-    top: 24px;
-    cursor: pointer;
-  }
-  &__arrow-prev {
-    right: 131px;
-  }
-
-  &__arrow-next {
-    right: 0;
-  }
-
-  &__pagination {
-    position: absolute;
-    top: 24px;
-    right: 44px;
-    left: auto;
-    width: auto;
-    color: #eeeceb;
-    .swiper-pagination-current {
-      color: vars.$basic-dark-color-text;
-      display: inline-block;
-      padding-left: 10px;
-    }
-    span + span {
-      padding-left: 10px;
-    }
-  }
 }
+
+.reviews-swiper {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.reviews-arrow {
+  position: absolute;
+  cursor: pointer;
+}
+.reviews-arrow-prev {
+  top: 24px;
+  right: 158px;
+}
+.reviews-arrow-next {
+  top: 24px;
+  right: 0;
+}
+.reviews-pagination {
+  position: absolute;
+  top: 20px;
+  right: 44px;
+  left: auto;
+  width: auto;
+  color: #eeeceb;
+}
+
+.swiper-pagination-current {
+  color: vars.$basic-dark-color-text;
+  display: inline-block;
+  padding-right: 10px;
+}
+.swiper-pagination-total {
+  display: inline-block;
+  padding-left: 10px;
+}
+
 .reviews-box {
   margin-bottom: 18px;
   display: flex;
