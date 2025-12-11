@@ -1184,6 +1184,10 @@ body {
 }
 
 .blog {
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
   padding-top: 33px;
 
   &__nav {
@@ -1456,6 +1460,10 @@ body {
 
   &__slider-box {
     padding-bottom: 60px;
+    img {
+      object-position: center;
+      object-fit: cover;
+    }
   }
 
   &__slider-addreview {
