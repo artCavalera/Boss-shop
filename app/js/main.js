@@ -1,3 +1,39 @@
+const breakpoint = window.matchMedia('(min-width: 576px)')
+let sliderMobile = null
+
+function initSwiper() {
+  sliderMobile = new Swiper('.slider-mobile', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+
+    navigation: {
+      nextEl: '.product__slider-arrow-next',
+      prevEl: '.product__slider-arrow-prev',
+    },
+  })
+}
+
+function destroySwiper() {
+  if (sliderMobile) {
+    sliderMobile.destroy(true, true)
+    sliderMobile = null
+  }
+}
+
+function handleBreakpointChange(e) {
+  if (e.matches) {
+    destroySwiper()
+  } else {
+    if (!sliderMobile) initSwiper()
+  }
+}
+
+handleBreakpointChange(breakpoint)
+
+breakpoint.addEventListener('change', handleBreakpointChange)
+
 const swiperReviews = new Swiper('.reviews-swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -29,11 +65,18 @@ const swiperReviews = new Swiper('.reviews-swiper', {
 const swiper = new Swiper('.look__slider', {
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 40,
+  spaceBetween: 30,
   // Navigation arrows
   navigation: {
     nextEl: '.look__slider-arrow-next',
     prevEl: '.look__slider-arrow-prev',
+  },
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    576: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1000: { slidesPerView: 3 },
+    1400: { slidesPerView: 3 },
   },
 })
 

@@ -6,43 +6,55 @@
   <section class="product">
     <div class="container">
       <div class="product__inner">
-        <div class="product__images">
-          <picture>
-            <!-- <source srcset="image.avif" type="image/avif" />
+        <div class="slider-mobile swiper">
+          <div class="product__images swiper-wrapper">
+            <picture class="swiper-slide">
+              <!-- <source srcset="image.avif" type="image/avif" />
             <source srcset="image.webp" type="image/webp" /> -->
-            <img
-              class="product__img"
-              src="images/product/product-01.jpg"
-              width="219"
-              height="369"
-              loading="lazy"
-              alt="collection pants"
-            />
-          </picture>
-          <picture>
-            <!-- <source srcset="image.avif" type="image/avif" />
+              <img
+                class="product__img"
+                src="images/product/product-01.jpg"
+                width="219"
+                height="369"
+                loading="lazy"
+                alt="collection pants"
+              />
+            </picture>
+            <picture class="swiper-slide">
+              <!-- <source srcset="image.avif" type="image/avif" />
             <source srcset="image.webp" type="image/webp" /> -->
-            <img
-              class="product__img"
-              src="images/product/product-02.jpg"
-              width="483"
-              height="752"
-              loading="lazy"
-              alt="David Beckham"
-            />
-          </picture>
-          <picture>
-            <!-- <source srcset="image.avif" type="image/avif" />
+              <img
+                class="product__img"
+                src="images/product/product-02.jpg"
+                width="483"
+                height="752"
+                loading="lazy"
+                alt="David Beckham"
+              />
+            </picture>
+            <picture class="swiper-slide">
+              <!-- <source srcset="image.avif" type="image/avif" />
             <source srcset="image.webp" type="image/webp" /> -->
-            <img
-              class="product__img"
-              src="images/product/product-03.jpg"
-              width="219"
-              height="376"
-              loading="lazy"
-              alt="Collection pants"
-            />
-          </picture>
+              <img
+                class="product__img"
+                src="images/product/product-03.jpg"
+                width="219"
+                height="369"
+                loading="lazy"
+                alt="Collection pants"
+              />
+            </picture>
+          </div>
+          <div class="product__slider-arrow product__slider-arrow-prev">
+            <svg width="10" height="18">
+              <use xlink:href="images/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="product__slider-arrow product__slider-arrow-next">
+            <svg width="10" height="18">
+              <use xlink:href="images/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
         </div>
         <div class="product__content">
           <h2 class="product__title">Trousers in cotton</h2>
@@ -52,12 +64,12 @@
             <dt class="product__term">color</dt>
             <dd class="product__detalis product__detalis-radio">
               <label class="radio-label" for="WHITE">
-                <input class="radio-check" type="radio" id="WHITE"/>
+                <input class="radio-check" type="radio" id="WHITE" />
                 <span class="radio-style"></span>
                 WHITE
               </label>
               <label class="radio-label" for="BlUE">
-                <input class="radio-check" type="radio" id="BlUE"/>
+                <input class="radio-check" type="radio" id="BlUE" />
                 <span class="radio-style"></span>
                 BlUE
               </label>

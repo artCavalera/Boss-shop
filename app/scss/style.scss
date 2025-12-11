@@ -787,6 +787,9 @@ body {
 
 .product {
   padding-bottom: 156px;
+  &__slider-arrow {
+    display: none;
+  }
 
   &__inner {
     padding-right: 40px;
