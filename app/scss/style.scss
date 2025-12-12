@@ -1862,6 +1862,9 @@ body {
 // Catalog
 
 .catalog {
+  &-popup {
+    display: none;
+  }
   &__top {
     margin-bottom: 80px;
     display: flex;

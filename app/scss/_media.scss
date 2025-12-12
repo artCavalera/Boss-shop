@@ -14,13 +14,9 @@
           object-position: center;
         }
       }
-      &__images picture:nth-child(1) {
-      }
       &__images picture:nth-child(2) {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
-      }
-      &__images picture:nth-child(3) {
       }
     }
   }
@@ -192,6 +188,38 @@
         gap: 20px;
       }
     }
+    .catalog {
+      &__filter {
+        display: none;
+      }
+      &__content-box {
+        width: 100%;
+        img {
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      &__view-mode {
+        display: none;
+      }
+      &-popup {
+        display: block;
+        position: relative;
+        font-size: 16px;
+        color: #4f4f4f;
+        &::after {
+          content: '';
+          position: absolute;
+          background-image: url(/images/icons/catalog-arrow.svg);
+          background-repeat: no-repeat;
+          width: 14px;
+          height: 9px;
+          top: 7px;
+          right: -20px;
+        }
+      }
+    }
   }
 
   .footer {
@@ -259,6 +287,22 @@
     }
     .reviews__top-link {
       font-size: 20px;
+    }
+    .catalog {
+      &__top {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        gap: 20px;
+      }
+      &__title {
+        order: -1;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+      }
+      &__content-items {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
   .blog-main {
@@ -726,6 +770,11 @@
     max-width: 360px;
   }
   .main {
+    .catalog {
+      &__content-items {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
     .david-beckham {
       &__text {
         font-size: 14px;
