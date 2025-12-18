@@ -99,7 +99,7 @@ const swiperReviews = new Swiper('.reviews-swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 8,
+  slidesPerView: 12,
   spaceBetween: 16,
 
   // If we need pagination
@@ -143,9 +143,14 @@ const swiper = new Swiper('.look__slider', {
 
 const headerBtn = document.querySelector('.header__btn')
 const menu = document.querySelector('.menu')
+const bodyLock = document.querySelector('body')
+
+
 
 headerBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--active')
+  bodyLock.classList.toggle('lock')
+
 })
 
 const modeContainer = document.querySelector('.view-mode__container')

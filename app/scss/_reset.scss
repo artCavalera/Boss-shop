@@ -54,11 +54,16 @@ select {
 }
 
 button {
+  display: block;
   appearance: none;
   border: transparent;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+}
+
+svg {
+  display: block;
 }
 
 address {
